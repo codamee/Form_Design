@@ -5,7 +5,7 @@
   
 ###  [Live Demo](https://codamee.github.io/Form_Design/)
 
-## ✨Key Features (What's Cool?)This form demonstrates several in-demand CSS coding techniques:
+## ✨Key Features:In-demand CSS coding techniques:
 
 * **Split-Screen Design:** The page is split into two columns (Image side and Form side) using **CSS Flexbox**.
 * **Custom UI:** We stripped the browser's default look from radio buttons and checkboxes using `appearance: none;` and built our own custom, animated markers using **CSS Pseudo-elements (`::before`)**.
@@ -13,7 +13,7 @@
 * **Clean Layout:** Uses good HTML structure (`<fieldset>`, `<label>`, etc.) to make the form accessible and easy to manage.
 
 
-## Project FocusThis project is a great resource for learning modern front-end form styling.
+## This project is a great resource for learning modern front-end form styling.
 
 * **Technology:** HTML5 and CSS3
 * **Goal:** Perfecting form UI and layout skills.
