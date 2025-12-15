@@ -1,0 +1,305 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+
+body {
+    display: flex;
+}
+
+.form-img {
+    background-image: url("Assets/robot-7727525.jpg");
+    background-size: cover;
+    width: 40vw;
+    height: 100vh;
+    /* padding: 100px 0px; */
+}
+
+.form-img>div {
+    width: 100%;
+    font-size: 40px;
+    margin: 8px 15px 0 20px;
+}
+
+.form-content {
+    width: 59vw;
+    height: 100vh;
+    overflow: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 50px;
+    padding: 50px;
+}
+
+.form-header {
+    width: 100%;
+    border: 2px solid rgb(214, 214, 214);
+    padding: 50px;
+    border-radius: 5px;
+}
+
+.form-header h1 {
+    font-size: 30px;
+    margin: 15px 0px;
+}
+
+.form-form {
+    width: 100%;
+    padding: 50px 50px 0 50px;
+    border: 2px solid rgb(214, 214, 214);
+    border-radius: 5px;
+
+
+}
+
+label,
+input,
+select,
+textarea,
+button {
+    font-size: inherit;
+    font-family: inherit;
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+.form-row {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    gap: 10px;
+    margin: 20px 0;
+}
+
+.form-row input {
+    padding: 8px;
+    border-radius: 5px;
+    border: none;
+    outline: none;
+    border: 2px solid rgb(202, 202, 202);
+}
+
+.form-row input:user-valid {
+    border: 2px solid green;
+}
+
+.form-row input:user-invalid {
+    border: 2px solid red;
+}
+
+.form-row input:focus {
+    border: 2px solid rgb(0, 132, 155);
+    /* box-shadow:1px 1px 1px 1px black inset; */
+}
+
+fieldset {
+    border-radius: 5px;
+    border: 2px solid rgba(0, 0, 0, 0.1);
+}
+
+legend {
+    background: rgb(0, 0, 0);
+    color: white;
+    padding: 5px 10px;
+    border-radius: 5px;
+    margin: 0px;
+}
+
+/* radio buttons */
+.form-radio-group {
+    margin: 30px 0px;
+}
+
+.form-radio-group div {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin: 10px 10px 10px 20px;
+}
+
+input[type=radio] {
+    appearance: none;
+    width: 20px;
+    height: 20px;
+    border: 2px solid gray;
+    border-radius: 100px;
+}
+
+input[type=radio]::before {
+    display: block;
+    content: "";
+    width: 14px;
+    height: 14px;
+    background-color: rgb(1, 130, 173);
+    border-radius: 50px;
+    transform: translate(1.3px, 1.5px) scale(0);
+    transition: all ease .5s;
+}
+
+input[type=radio]:checked:before {
+    transform: translate(1.3px, 1.5px) scale(1);
+}
+
+/* Select */
+select,
+::picker(select) {
+    appearance: base-select;
+}
+
+select {
+    width: 100%;
+    margin: 20px 0;
+    padding: 10px 20px;
+    border: 2px solid rgb(204, 204, 204);
+}
+
+::picker(select) {
+    border: none;
+    border-radius: 5px;
+}
+
+option {
+    border: 1px solid rgb(203, 203, 203);
+    padding: 10px 20px;
+}
+
+.option-icon {
+    font-size: 20px;
+}
+
+selectedcontent .option-icon {
+    display: none;
+}
+
+option:first-of-type {
+    border-radius: 5px 5px 0 0;
+}
+
+option:last-of-type {
+    border-radius: 0 0 5px 5px;
+}
+
+option:not(:last-of-type) {
+    border-bottom: none;
+}
+
+option:nth-child(odd) {
+    background-color: rgb(240, 240, 240);
+}
+
+option:hover {
+    background-color: plum;
+}
+
+option:checked {
+    font-weight: bold;
+}
+
+select::picker-icon {
+    font-size: 20px;
+    transition: all 0.5s ease-in-out;
+}
+
+select:open::picker-icon {
+    rotate: 180deg;
+}
+
+option::checkmark {
+    order: 1;
+    margin-left: auto;
+    content: "✔";
+    font-size: 20px;
+}
+
+::picker(select) {
+    opacity: 0;
+    transition: all 0.4s allow-discrete;
+}
+
+::picker(select):popover-open {
+    opacity: 1;
+}
+
+@starting-style {
+    ::picker(select):popover-open {
+        opacity: 0;
+    }
+}
+
+::picker(select) {
+    top: calc(anchor(bottom) + 5px);
+    left: anchor(5%);
+}
+
+/* checkboxes */
+.form-checkbox {
+    margin: 20px 0;
+    padding: 10px 20px;
+    display: flex;
+    gap: 15px;
+}
+
+input[type=checkbox] {
+    appearance: none;
+    width: 20px;
+    height: 20px;
+    border: 2px solid gray;
+    border-radius: 3px;
+    position: relative;
+}
+
+input[type=checkbox]::before {
+    content: "✔";
+    font-size: 18px;
+    visibility: hidden;
+    position: absolute;
+    bottom: -3px;
+    left: 1px;
+    color: green;
+}
+
+input[type=checkbox]:checked:before {
+    visibility: visible;
+}
+
+/* Text area */
+textarea {
+    display: block;
+    padding: 15px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: inherit;
+    resize: none;
+    outline: none;
+    border: 2px solid rgb(205, 205, 205);
+    border-radius: 5px;
+    margin-top: 20px;
+}
+
+/* btn */
+.btn {
+    width: 100%;
+    margin: 50px 0;
+    text-align: center;
+}
+
+button {
+    width: 30%;
+    border: 2px solid gray;
+    padding: 10px 15px;
+    border: 2px solid #000000;
+    background-color: #000000;
+    border-radius: 5px;
+    transition: background-color .2s ease-in;
+    cursor: pointer;
+    color: rgb(215, 215, 215);
+    font-weight: 600;
+}
+
+button:hover {
+    box-shadow: 0px 0px 5px 1px rgb(0, 0, 0);
+
+}

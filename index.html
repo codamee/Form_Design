@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="form-img">
+        <div>
+            <img src="Assets/code-7146975_1920.png" alt="Logo" width="50">
+        </div>
+    </div>
+    <div class="form-content">
+        <header class="form-header">
+            <h1>Hackathon By Codamee</h1>
+            <p><em>This is not a real online service! This is just a form design
+                    example</em></p>
+        </header>
+        <form action="" method="get" class="form-form">
+            <h2>Please fill all Required(*) fields</h2>
+            <section>
+
+                <p class="form-row">
+                    <label for="firstname">First Name :*</label>
+                    <input type="text" name="firstname" id="firstname" placeholder="john" required>
+                </p>
+                <p class="form-row">
+                    <label for="lastname">Last Name :*</label>
+                    <input type="text" name="lastname" id="lastname" placeholder="Doe" required>
+                </p>
+                <p class="form-row">
+                    <label for="email">Email :*</label>
+                    <input type="email" name="email" id="email" placeholder="Elon@example.com" required>
+                </p>
+                <p class="form-row">
+                    <label for="tel">Phone No :*</label>
+                    <input type="tel" name="tel" id="tel" min="10" placeholder="1234567890" required>
+                </p>
+            </section>
+            <fieldset class="form-radio-group">
+                <legend>Operating system you can handle*</legend>
+
+                <div class="form-radio">
+                    <input type="radio" name="os" id="windows" checked required>
+                    <label for="windows">Windows</label>
+                </div>
+                <div class="form-radio">
+                    <input type="radio" name="os" id="linux">
+                    <label for="linux">Linux</label>
+                </div>
+                <div class="form-radio">
+                    <input type="radio" name="os" id="mac">
+                    <label for="mac">Mac</label>
+                </div>
+
+            </fieldset>
+            <div class="form-select">
+                <label for="exp">Experience in Programming* :</label>
+                <select name="exp" id="exp">
+                    <button>
+                        <selectedcontent></selectedcontent>
+                    </button>
+                    <option value="0" >
+                        <span class="option-icon">0️⃣</span>
+                        <span>Beginner</span>
+                    </option>
+                    <option value="1" >
+                        <span class="option-icon">1️⃣</span>
+                        <span>1 Year</span>
+                    </option>
+                    <option value="2">
+                        <span class="option-icon">2️⃣</span>
+                        <span>2 Year's</span>
+                    </option>
+                    <option value="3">
+                        <span class="option-icon">3️⃣</span>
+                        <span>3 Year's && More...</span>
+                    </option>
+                </select>
+            </div>
+            <section>
+                <fieldset class="form-checkbox-group">
+                    <legend>Select Your Trending Tech Interests:*</legend>
+
+                    <div class="form-checkbox">
+                        <input type="checkbox" id="ai-ml" name="tech-interest" value="AI/ML" checked>
+                        <label for="ai-ml">Artificial Intelligence (AI) and Machine Learning (ML)</label><br>
+                    </div>
+
+                    <div class="form-checkbox">
+                        <input type="checkbox" id="cloud-devops" name="tech-interest" value="Cloud-DevOps">
+                        <label for="cloud-devops">Cloud Computing and Cloud-Native Development</label><br>
+                    </div>
+
+                    <div class="form-checkbox">
+                        <input type="checkbox" id="data-science" name="tech-interest" value="Data-Science">
+                        <label for="data-science">Data Science and Data Analytics</label><br>
+                    </div>
+
+                    <div class="form-checkbox">
+                        <input type="checkbox" id="cybersec" name="tech-interest" value="Cybersecurity">
+                        <label for="cybersec">Cybersecurity and DevSecOps</label><br>
+                    </div>
+
+                    <div class="form-checkbox">
+                        <input type="checkbox" id="fullstack-ts" name="tech-interest" value="Fullstack-TS">
+                        <label for="fullstack-ts">Full-Stack and TypeScript Development</label><br>
+                    </div>
+
+                    <div class="form-checkbox">
+                        <input type="checkbox" id="blockchain-web3" name="tech-interest" value="Blockchain-Web3">
+                        <label for="blockchain-web3">Blockchain and Web3 Development</label><br>
+                    </div>
+                </fieldset>
+            </section>
+            <div class="form-row">
+                <label for="intro">Breifly explain about your Talents :*</label>
+                <textarea name="intro" id="intro" rows="15"></textarea>
+            </div>
+            <div class="btn">
+                <button>Submit</button>
+            </div>
+        </form>
+    </div>
+
+</body>
+
+</html>
