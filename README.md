@@ -1,9 +1,9 @@
 # Form_Design
 
-## 📄 Simple README.md: Hackathon Registration Form ##🏆
+## 📄 Simple Hackathon Registration Form ##🏆
 * Hackathon Registration Form .This is a modern, responsive HTML form built for a practice hackathon registration page. It is a project focused entirely on using clean, modern **HTML** and **CSS** for advanced form styling.
-[Live Demo](https://codamee.github.io/Form_Design/)
----
+  
+##[Live Demo](https://codamee.github.io/Form_Design/)
 
 ### ✨ Key Features (What's Cool?)This form demonstrates several in-demand CSS coding techniques:
 
@@ -12,7 +12,6 @@
 * **Live Feedback:** Uses special CSS rules (`:user-valid` and `:user-invalid`) to change the border color to **green or red instantly** as the user types, giving immediate validation.
 * **Clean Layout:** Uses good HTML structure (`<fieldset>`, `<label>`, etc.) to make the form accessible and easy to manage.
 
----
 
 ### 📝 Project FocusThis project is a great resource for learning modern front-end form styling.
 
